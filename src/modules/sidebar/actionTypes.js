@@ -1,0 +1,5 @@
+export const SIDEBAR_OPEN = 'SIDEBAR_OPEN';
+export const SIDEBAR_SHUT = 'SIDEBAR_SHUT';
+export const SIDEBAR_PEEK = 'SIDEBAR_PEEK';
+export const SIDEBAR_HIDE = 'SIDEBAR_HIDE';
+export const SIDEBAR_LINK_SELECT = 'SIDEBAR_LINK_SELECT';

@@ -1,0 +1,21 @@
+.toggler
+  position fixed
+  top 0px
+  width 120px
+  height 120px
+  display flex
+  justify-content center
+  align-items center
+  cursor pointer
+  z-index 4
+  .bar-container
+    width 40px
+    .bar
+      display block
+      background $grey1
+      height 2px
+      margin 6px 4px
+      transition background 300ms ease-in-out
+      @extend .no-3d-flicker
+      &.open
+        background $grey1

@@ -1,0 +1,72 @@
+.sidebar
+  padding-top 120px
+  position absolute
+  top 0px
+  bottom 0px
+  width 60%
+  max-width 314px
+  z-index 3
+  overflow hidden !important
+  @extend .no-3d-flicker
+  .links
+    height calc(100vh - 120px)
+    overflow-y scroll
+    .is-active
+      background $white
+      color $green1
+  .link
+    background $green1
+    color $grey1
+    font-variant small-caps
+    font-family 'Brandon Bld'
+    letter-spacing 1.6px
+    height 45px
+    font-size 16px
+    cursor pointer
+    overflow hidden !important
+    transition color 200ms ease-in-out
+    transition background 300ms ease-in-out 200ms
+    .title
+      text-align center
+      height 30px
+      max-height 30px
+      padding 8px 0px
+      z-index 3
+      position relative
+    .stroke
+      background $white70
+      position absolute
+      width 5%
+      height 45px
+      opacity 0
+      @extend .no-3d-flicker
+      &.left
+        left -5%
+      &.right
+        right -5%
+    .fill
+      background $white70
+      position absolute
+      width 50%
+      height 45px
+      @extend .no-3d-flicker
+      &.inner
+        z-index 2
+      &.left
+        opacity 0
+        transition opacity 400ms cubic-bezier(0.55, 0.31, 0.15, 0.93) 200ms
+      &.right
+        opacity 0
+        transition opacity 400ms cubic-bezier(0.55, 0.31, 0.15, 0.93) 200ms
+    &:hover
+      color $green1
+      .fill.left, .fill.right
+        opacity 1
+.screen
+  position absolute
+  top 0px
+  left 0px
+  right 0px
+  bottom 0px
+  z-index 2
+  background rgb(0, 0, 0)
